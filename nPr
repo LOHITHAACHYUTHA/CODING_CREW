@@ -1,0 +1,21 @@
+
+class Solution{
+public:
+    
+        // code here
+        long long fact(int n)
+        {
+            long long res=1;
+            while(n)
+            {
+                res=res*n;
+                n--;
+            }
+            return res;
+        }
+        long long nPr(int n, int r)
+        {
+            return (fact(n)/fact(n-r));
+        }
+    
+};
